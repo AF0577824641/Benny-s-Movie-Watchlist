@@ -1,6 +1,6 @@
 CREATE TABLE `default`.`director_to_movie`  (
-  `director_id` int NOT NULL,
-  `movie_id` int NOT NULL,
+  `director_id` int UNSIGNED NOT NULL,
+  `movie_id` int UNSIGNED NOT NULL,
   PRIMARY KEY (`director_id`, `movie_id`)
 );
 
@@ -9,8 +9,7 @@ CREATE TABLE `default`.`directors`  (
   `full_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `birth_date` date NULL DEFAULT NULL,
   `death_date` date NULL DEFAULT NULL,
-  `movie_id` int NOT NULL,
-  PRIMARY KEY (`movie_id`) USING BTREE
+  PRIMARY KEY (`director_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 CREATE TABLE `default`.`genres`  (
@@ -33,12 +32,11 @@ CREATE TABLE `default`.`movies`  (
   `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `release_year` smallint NULL DEFAULT NULL,
   `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  PRIMARY KEY (`movie_id`) USING BTREE,
-  INDEX `fk_movies_director`((director_id) ASC) USING BTREE
+  PRIMARY KEY (`movie_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
-ALTER TABLE `default`.`directors` ADD CONSTRAINT `fk_directors_director_to_movie_1` FOREIGN KEY (`director_id`) REFERENCES `default`.`director_to_movie` (`director_id`);
+ALTER TABLE `default`.`director_to_movie` ADD CONSTRAINT `fk_dtm_director` FOREIGN KEY (`director_id`) REFERENCES `default`.`directors` (`director_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `default`.`director_to_movie` ADD CONSTRAINT `fk_dtm_movie` FOREIGN KEY (`movie_id`) REFERENCES `default`.`movies` (`movie_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE `default`.`movie_genre` ADD CONSTRAINT `fk_mg_genre` FOREIGN KEY (`genre_id`) REFERENCES `default`.`genres` (`genre_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE `default`.`movie_genre` ADD CONSTRAINT `fk_mg_movie` FOREIGN KEY (`movie_id`) REFERENCES `default`.`movies` (`movie_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-ALTER TABLE `default`.`movies` ADD CONSTRAINT `fk_movies_director_to_movie_1` FOREIGN KEY (`movie_id`) REFERENCES `default`.`director_to_movie` (`movie_id`);
-
+```
