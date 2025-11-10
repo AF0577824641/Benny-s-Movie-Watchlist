@@ -24,3 +24,4 @@ The project incorporates:
 - **[Word Document](https://docs.google.com/document/d/1hvbzYHq9kyxoOdJOi9p1mjuIE28ZYHQcJG1S1CW_h68/edit?usp=sharing)** - Original movie watchlist
 - **[Spreadsheet](https://docs.google.com/spreadsheets/d/1VJW1324CEw_mStu_CWv2US1oh3E22J63Zc-Ndmb2up8/edit?usp=sharing)** - Cleaned and structured data
 - **[Proposal](https://docs.google.com/document/d/1iXk_IiontO1bKQAZjaLPTfbVtaJP0m8kGb_T8rcrT_U/edit?usp=sharing)** - Full project proposal
+- **[Colab Workbook](https://colab.research.google.com/drive/1GtY7cb7FVBg8SbNqPq7MQbyjxgx50El-?usp=sharing)** - Project source code
