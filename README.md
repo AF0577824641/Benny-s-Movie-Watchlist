@@ -2,9 +2,13 @@
 
 ## Project Team
 
-- **Shy Adelman** - sadelm18@pratt.edu
-- **Adonis Fuentes** - afuente6@pratt.edu
-- **Benny Candie** - acandie@pratt.edu
+| Team Member        | Role & Responsibilities                                                                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Shy Adelman**    | Data Visualization & Interface: Create visualizations (genre, decade, director), assist with randomizer logic, and help develop user interface components in Python             |
+| **Adonis Fuentes** | Randomizers & Analysis Functions: Build global, genre, and decade randomizers; write analysis functions for films per decade and genre; support schema design and query testing |
+| **Benny Candie**   | Data & Validation: Convert Word → TXT → CSV, clean and validate dataset, check duplicates, normalize director and genre labels, and verify all required fields                  |
+
+**Integration:** All team members will collaborate to connect all elements, and the final product will be a running Python script with a UI in which we can search, find, rate, and update the database file based on user input.
 
 **Course:** INFO-664-01: Programming for Cultural Heritage
 
