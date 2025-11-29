@@ -2,7 +2,6 @@ import csv
 import sqlite3
 
 # establish the 'cursor' needed to work inside the db
-# NOTE: because db exists, it will open it rather than create it
 conn = sqlite3.connect("benny_movies.db")
 cursor = conn.cursor()
 
