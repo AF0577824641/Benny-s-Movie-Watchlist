@@ -19,4 +19,4 @@ print(
     f"Title: {random_movie[1]}\nRelease Year: {random_movie[2]}\nDescription: {random_movie[3]}\nReview: {random_movie[4]}"
 )
 conn.close()
-# TODO: Add option after randomization to let user choose to randomwill add ooption to after radnomziation has been execuated then give the option to suer if they want to keep on randomzinng again or go back to the main menu option, which also has print message for options. Also not sure if we want user to be able to input number of randomizations?
+# TODO: Add option after randomization to let user choose to randomwill add ooption to after randomization has been execuated then give the option to suer if they want to keep on randomzinng again or go back to the main menu option, which also has print message for options. Also not sure if we want user to be able to input number of randomizations?
