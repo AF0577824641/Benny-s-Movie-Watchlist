@@ -3,6 +3,7 @@ import sqlite3
 # connects to the database
 conn = sqlite3.connect("benny_movies.db")
 
+# Create a cursor object to execute SQL queries on the database connection
 cursor = conn.cursor()
 
 cursor.execute("""
