@@ -2,17 +2,16 @@
 
 # 00_database-schema
 
-| Comment No. | Description                                 |
-| ----------- | ------------------------------------------- |
-| 1           | created the database schema in data modeler |
-| 2           |                                             |
+| Comment No. | Description                                  |
+| ----------- | -------------------------------------------- |
+| 1           | Created the database schema in data modeler. |
 
 # 01_create_database.py
 
-| Comment No. | Description                                                                                                       |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- |
-| 2           | When creating this script I referenced what we used in out Text to speech workbook shared                         |
-| 3           | I only had one error after the db file was create it turn out you cn update the db file and have it open elsewere |
+| Comment No. | Description                                                                                                          |
+| ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1           | Referenced the Text-to-Speech workbook when creating this script.                                                    |
+| 2           | Note: Cannot update the database file while it is open elsewhere. Close all connections before making modifications. |
 
 # 02_import_data.py
 
