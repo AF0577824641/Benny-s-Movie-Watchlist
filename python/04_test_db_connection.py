@@ -1,5 +1,4 @@
 # imports python libraries
-# view list option and about / help option
 # Refrenced colab (Shared Project 3): https://colab.research.google.com/drive/1YEqzHzwr1e8PFGz9xLvE9Xe9t742Nd_0?usp=sharing#scrollTo=2-bb-ddOBzjm
 #
 import sqlite3
@@ -16,7 +15,7 @@ while keep_going:
         break
     # brings up the choice to
     choice = input(
-        "\n1) Search by Director\n2) Search by Genre\n3) Feeling Lucky For a Director\n4) Feeling Lucky For a Genre\nChoose 1 or 2: "
+        "\n1) Search by Director\n2) Search by Genre\n3) Feeling Lucky For a Movie\n4) Feeling Lucky For a Genre\nChoose 1 or 2: "
     )
 
     # connect to database
@@ -72,6 +71,10 @@ while keep_going:
                 "No movies found."
             )  # prints no movies found inf user input movies that is not in the the db
 
+    elif choice == "3":
+        import subprocess
+
+        subprocess.run(["python", "03_random_movie.py"])
     else:
         print("Invalid choice.")
 
