@@ -21,6 +21,14 @@ The project incorporates:
 - Python-based randomization features
 - Visual exploration tools (optional, time permitting)
 
+## Documentation
+
+| Team Member        | Documentation Files                                                                                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Adonis Fuentes** | [Coding Notes](documentation/adonis_coding-notes.md) • [Responsibilities](documentation/adonis_responsibilities.md) • [Error Screen Recording](adonis_errors_screenrecording) |
+| **Benny Candie**   | [Coding Notes](documentation/benny_coding-notes.md) • [Responsibilities](documentation/benny_responsibilities.md)                                                             |
+| **Shy Adelman**    | [Coding Notes](documentation/shy_coding-notes.md) • [Responsibilities](documentation/shy_responsibilities.md)                                                                 |
+
 ## Project Links
 
 - **[Word Document](https://docs.google.com/document/d/1hvbzYHq9kyxoOdJOi9p1mjuIE28ZYHQcJG1S1CW_h68/edit?usp=sharing)** - Original movie watchlist

@@ -27,7 +27,7 @@ while keep_going:
         director_name = input("\nEnter director name: ")
 
         # query database for movies by director
-        # Reference: https://www.freecodecamp.org/news/connect-python-with-sql/
+        # Reference: (Will reference this later on for connecting the server mysql database) https://www.freecodecamp.org/news/connect-python-with-sql/
         cursor.execute(
             """SELECT m.title, m.release_year
             FROM movies m
@@ -43,7 +43,9 @@ while keep_going:
             for movie in movies:
                 print(f"- {movie[0]} ({movie[1]})")
         else:
-            print("No movies found.")
+            print(
+                "No movies found."
+            )  # TODO: Add functionality to allow re-input if search doesn't exist instead of returning to main menu
 
     elif choice == "2":
         genre_name = input("\nEnter genre name: ")

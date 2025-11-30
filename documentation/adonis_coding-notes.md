@@ -12,7 +12,7 @@
 | ----------- | -------------------------------------------------------------------------------------------------------------------- |
 | 1           | Referenced the Text-to-Speech workbook when creating this script.                                                    |
 | 2           | Note: Cannot update the database file while it is open elsewhere. Close all connections before making modifications. |
-| 3           | Note: Cannot update the database file while it is open elsewhere. Close all connections before making modifications. |
+| 3           |                                                                                                                      |
 
 # 02 Import Data into DB
 
