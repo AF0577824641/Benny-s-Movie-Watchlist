@@ -6,10 +6,11 @@ conn = sqlite3.connect("benny_movies.db")
 cursor = conn.cursor()
 
 # create path to csv containing the texts
-data_file_path = "genre.csv"
+data_genre = "genre.csv"
+data_movie = "movies.csv"
 
 # read in csv file and populate the database
-with open(data_file_path, "r") as csv_obj:
+with open(data_genre, "r") as csv_obj:
     reader = csv.reader(csv_obj)
     next(reader, None)  # skips field names
     for row in reader:
@@ -17,6 +18,15 @@ with open(data_file_path, "r") as csv_obj:
         cursor.execute(
             "INSERT OR IGNORE INTO genres (genre_name) VALUES (?)", (row[1],)
         )
+        # commit after importing genres
+        conn.commit()
+
+with open(data_movie, "r") as csv_obj:
+    reader = csv.reader(csv_obj)
+    next(reader, None)  # skips field names
+    for row in reader:
+        # insert text row by row, skip movie_id and let it auto-increment
+        cursor.execute("INSERT OR IGNORE INTO movies (title) VALUES (?)", (row[1],))
 
 print("process completed")
 

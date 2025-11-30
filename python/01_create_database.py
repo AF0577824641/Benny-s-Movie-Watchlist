@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS movie_genre (
 # commit the changes
 conn.commit()
 
-print("Tables created successfully!")
+print("All tables have been created successfully!")
 
 # close the connection when done
 conn.close()
