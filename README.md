@@ -29,9 +29,29 @@ The project incorporates:
 | **Benny Candie**   | [Coding Notes](documentation/benny_coding-notes.md) • [Responsibilities](documentation/benny_responsibilities.md)                                                             |
 | **Shy Adelman**    | [Coding Notes](documentation/shy_coding-notes.md) • [Responsibilities](documentation/shy_responsibilities.md)                                                                 |
 
+## How it Works
+
+### About the Database
+
+Benny's Movie Database is a rudimentary and searchable movie database project conceived by Adonis Fuentes, Benny Candie, and Shy Adelman as a way to explore, practice, and implement python code in a practical and realistic way. This database is based off of Benny's Master Movie Watchlist (est. 2017), a personal, detailed list of over 1,000 movies that are ranked upon watch and organized alphabetically by director and genre. The goal of this project was to take that list and make it into a database using SQL and Python that could be edited, updated, and searched through via python on the backend while also allowing user-input and interaction on the front end. While rudimentary, the code as it stands acts as a proof of concept of the idea.
+
+### How To Use
+
+This database contains a selection of 150 movies from the watchlist. Users are able to use multiple choice options to receive a movie either at random or through searching via the multiple choice options provided. So far, the code allows for the user to "search" through the database for movies based on genre, director, or by randomization.
+
+Users should be able to use multiple choice to be able to learn more about the project, restart to the beginning of the multiple choice options, or quit the interaction entirely.
+
+# Libraries Used
+
+- **[Random](https://docs.python.org/3/library/random.html)** - Random number generation and selection library
+- **[SQLite3](https://docs.python.org/3/library/sqlite3.html)** - Lightweight database management library
+- **[Pandas](https://pandas.pydata.org/)** - Data manipulation and analysis library
+- **[Matplotlib](https://matplotlib.org/)** - Data visualization library
+
 ## Project Links
 
 - **[Word Document](https://docs.google.com/document/d/1hvbzYHq9kyxoOdJOi9p1mjuIE28ZYHQcJG1S1CW_h68/edit?usp=sharing)** - Original movie watchlist
 - **[Spreadsheet](https://docs.google.com/spreadsheets/d/1VJW1324CEw_mStu_CWv2US1oh3E22J63Zc-Ndmb2up8/edit?usp=sharing)** - Cleaned and structured data
 - **[Proposal](https://docs.google.com/document/d/1iXk_IiontO1bKQAZjaLPTfbVtaJP0m8kGb_T8rcrT_U/edit?usp=sharing)** - Full project proposal
 - **[Colab Workbook](https://colab.research.google.com/drive/1GtY7cb7FVBg8SbNqPq7MQbyjxgx50El-?usp=sharing)** - Project source code
+- **[Presentation]()** -

@@ -5,10 +5,13 @@ import sqlite3
 conn = sqlite3.connect("benny_movies.db")
 cursor = conn.cursor()
 
+
 # path to csv containing the data
 data_genre = "genre.csv"
 data_movie = "movies.csv"
 data_directors = "directors.csv"
+data_directorstomovie = "directors_to_movie.csv"
+data_movie_genre = "movie_genre.csv"
 
 # read in csv file and populate the database
 with open(data_genre, "r") as csv_obj:
@@ -46,3 +49,6 @@ conn.commit()
 
 # close the connection
 conn.close()
+
+
+# test
