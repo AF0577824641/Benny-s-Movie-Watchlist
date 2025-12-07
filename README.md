@@ -41,6 +41,24 @@ This database contains a selection of 150 movies from the watchlist. Users are a
 
 Users should be able to use multiple choice to be able to learn more about the project, restart to the beginning of the multiple choice options, or quit the interaction entirely.
 
+## Base Documentation
+
+### Database Set Up
+
+Data for the SQL database was set up using google sheets and all data was exported as a csv file. Data was lifted from the movie list manually and further expanded upon when necessary to help with the robustness of the data and to prevent unnecessary duplication in entries as a way to cut down on redundancy and make parsing through the database with code easier. Separate sheets were made for: Movies, Directors, and Genre and each entry in each data set was assigned a unique numerical ID (which would become necessary later when connecting the information to each other).
+
+Additionally two sheets were made to map out the connections between movies and genres as well as directors to movies. In these sheets, should a movie occupy more than one genre (or a director more than one movie) their ID was associated w/ the corresponding ID of the movie or genre on a new line (if a director was associated with two movies, he would have two lines in the table, with one movie's ID associated with each line, rather than all of the IDs being associated with a single instance of the director's ID). This was done to maintain a 1:1 connection within the data between IDs while allowing us to associate multiple values to a single entity in a way that would be easily read and understood by the programming. These two connecting sheets (movies>directors and movie>genre) were used to connect the tables via SQL code.
+
+### Server Set Up
+
+In order to have the database accessible through something to demo (such as google colab) and to demonstrate an understanding of the backend of hosting such a project, the completed database was copied onto a server from freesqldatabase.com. This allows us to be able to host the information somewhere that can be easily found and connected to via python code. This allows us to pull the information from any computer rather than relying on only local files and connections and was done to help clean the code and parsing. An attempt was made to make a remote connection available via MySQL, but was unsuccessful due to the fact that it pissed me off and required too many IP permissions and specifications that frankly were not worth the effort. freesqldatabase was easier to set up and more seamless for the end result we had (to be able to demo this on google colab). This is on top of the fact that setting up the remote connection incorrectly via MySQL on your own computer can lead you to having an empty server totally open to the public web which is not only not safe or secure, but also stupid and can only be fixed by uninstalling the entirety of MySQL, downloading it again, and then retrying to start up a correct and secure remote connection. freesqldatabase takes on the brunt of all of that work so that is what is being used currently.
+
+### Code Set Up
+
+n/a
+
+---
+
 # Libraries Used
 
 - **[Random](https://docs.python.org/3/library/random.html)** - Random number generation and selection library
