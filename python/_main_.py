@@ -12,7 +12,7 @@ running = True
 while running:
     # brings up the choice to
     choice = input(
-        "\n0) About\n1) Search by Director\n2) Search by Genre\n3) Random Movie\n4) Random Genre\n5) Add New Movie\n6) Add Genre to Movie\n7) Add Director to Movie\n8) Create Dataviz (Gender of Directors)\n\nEnter Q to quit: "
+        "\n0) About\n1) Search by Director\n2) Search by Genre\n3) Random Movie\n4) Random Genre\n5) Add New Movie\n\nEnter Q to quit: "
     )
     # If user_input
     if choice.lower() == "q":

@@ -68,7 +68,6 @@ with open(data_movie_genre, "r") as csv_file:
             "INSERT OR IGNORE INTO movie_genre (movie_id, genre_id) VALUES (?, ?)",
             (row[0], row[1]),
         )
-```
 
 print("All tables have been imported successfully")
 

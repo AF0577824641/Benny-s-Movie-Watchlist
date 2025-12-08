@@ -30,4 +30,3 @@ conn.close()
 # TODO: updated print message to be more concise with details already input, and also after succesfull creationg make sure that input message is cleared since still shows up before print message.
 # TODO: add error handling for invalid input
 # TODO: link should be optional (Line13)
-```
