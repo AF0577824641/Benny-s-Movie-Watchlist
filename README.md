@@ -16,11 +16,11 @@ Benny's Movie Watchlist is an interactive, database-driven tool for exploring a 
 
 ## Documentation
 
-| Team Member        | Documentation Files                                                                                                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Adonis Fuentes** | [Coding Notes](documentation/adonis_coding-notes.md) • [Responsibilities](documentation/adonis_responsibilities.md) • [Error Screen Recording](adonis_errors_screenrecording) |
-| **Benny Candie**   | [Coding Notes](documentation/benny_coding-notes.md) • [Responsibilities](documentation/benny_responsibilities.md)                                                             |
-| **Shy Adelman**    | [Coding Notes](documentation/shy_coding-notes.md) • [Responsibilities](documentation/shy_responsibilities.md)                                                                 |
+| Team Member        | Documentation Files                                    |
+| ------------------ | ------------------------------------------------------ |
+| **Adonis Fuentes** | [Documentation](documentation/adonis_documentation.md) |
+| **Benny Candie**   | [Documentation](documentation/benny_documentation.md)  |
+| **Shy Adelman**    | [Documentation](documentation/shy_documentation.md)    |
 
 ## How it Works
 
