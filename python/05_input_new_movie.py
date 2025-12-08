@@ -1,7 +1,7 @@
 import sqlite3
 
 conn = sqlite3.connect("benny_movies.db")
-eursor = conn.cursor()
+cursor = conn.cursor()
 
 # input fields for new movie
 movie_title = input("Enter movie title: ")
@@ -30,3 +30,4 @@ conn.close()
 # TODO: updated print message to be more concise with details already input, and also after succesfull creationg make sure that input message is cleared since still shows up before print message.
 # TODO: add error handling for invalid input
 # TODO: link should be optional (Line13)
+```
