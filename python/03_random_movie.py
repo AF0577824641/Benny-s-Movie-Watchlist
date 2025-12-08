@@ -5,6 +5,7 @@ from random import randint
 conn = sqlite3.connect("benny_movies.db")
 cursor = conn.cursor()
 
+
 cursor.execute("SELECT * FROM movies")
 all_movies = cursor.fetchall()  # MYSQL ref /  https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchall.html
 

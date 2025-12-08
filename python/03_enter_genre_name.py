@@ -6,8 +6,8 @@ cursor = conn.cursor()
 genre_name = input("\nEnter genre name: ")
 
 # query database for movies by genre
-# Reference: https://www.freecodecamp.org/news/connect-python-with-sql/
-# Reference: https://www.w3schools.com/python/python_mysql_select.asp
+# reference: https://www.freecodecamp.org/news/connect-python-with-sql/
+# reference: https://www.w3schools.com/python/python_mysql_select.asp
 cursor.execute(
     """SELECT m.title, m.release_year
     FROM movies m
