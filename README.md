@@ -54,7 +54,6 @@ So, instead of creating individual files or one file with all of the code, we se
 
 - **[Random](https://docs.python.org/3/library/random.html)** - Random number generation and selection library
 - **[SQLite3](https://docs.python.org/3/library/sqlite3.html)** - Lightweight database management library
-- **[Pandas](https://pandas.pydata.org/)** - Data manipulation and analysis library
 - **[Matplotlib](https://matplotlib.org/)** - Data visualization library
 
 ## Project Links
